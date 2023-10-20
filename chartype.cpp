@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+  string abc;
+  cout<<"Enter a string:";
+  cin>>abc;
+  string vowels = {"a, o,  e, u , i"};
+  
+  string numbers = {"1, 2 ,3, 4, 5 ,6 , 7, 8, 9, 0"};
+  string special = {"!, ?, /, |, *, &"};
+  if(abc.find(vowels)){ cout<<"it's a vowel"; }
+  else if(abc.find(numbers)){cout<<"its a number";}
+  else if(abc.find(special)){cout<<"its a special";}
+  else {cout<<"its either a constant or unrecognisable";}
+  return 0;
+}
+  
